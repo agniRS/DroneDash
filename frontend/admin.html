@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hogwarts</title>
+</head>
+<body>
+
+
+<div class="card m-3">
+    <div class="card-header">
+        All Users
+    </div>
+    <div class="card-body">
+<!--        <h5 class="card-title">Special title treatment</h5>-->
+<!--        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
+        <div class="container">
+            <table class="table" id="userTable" data-height="460">
+                <thead>
+                <tr>
+                    <th scope="col" data-field="username">Username</th>
+                    <th scope="col" data-field="first_name">First Name</th>
+                    <th scope="col" data-field="last_name">Last Name</th>
+                    <th scope="col" data-field="price">Email</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="card bg-white m-3">
+    <div class="card-heading">
+        <h1 class="card-title">Add User</h1>
+    </div>
+    <div class="card-body">
+        <form id="addUserForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="usernameInput">Username</label>
+                    <input name="username" type="text" class="form-control" id="usernameInput" placeholder="Username">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="emailInput">Email</label>
+                    <input name="email" type="email" class="form-control" id="emailInput" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="firstnameInput">First Name</label>
+                    <input name="first_name" type="text" class="form-control" id="firstnameInput" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastnameInput">Last Name</label>
+                    <input name="last_name" type="text" class="form-control" id="lastnameInput" placeholder="Last Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="passwordInput">Password</label>
+                    <input name="password" type="password" class="form-control" id="passwordInput" placeholder="Password">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="typeInput">Type</label>
+                    <select name="type" id="typeInput" class="form-control">
+                        <option selected>Student</option>
+                        <option>Professor</option>
+                        <option>Admin</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Create User</button>
+        </form>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="sdk.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
